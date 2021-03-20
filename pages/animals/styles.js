@@ -11,15 +11,6 @@ export const ImageBackground = styled.Image`
     height: 100%;
 `;
 
-export const Title = styled.Text`
-    font-size: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 29%;
-    margin-bottom: 15px;
-`;
-
 export const ViewAnimalsAction = styled.View`
     display: flex;
     flex-direction: row;
@@ -29,7 +20,7 @@ export const ViewAnimalsAction = styled.View`
 `;
 
 export const ButtonAction = styled.TouchableOpacity`
-    width: 45%;
+    width: 200px;
     height: 250px;
     border: 1px solid lightgray;
     box-shadow: 5px 5px 2px lightgray;
@@ -54,10 +45,10 @@ export const ImageBackgroundAnimals = styled.Image`
     top: 5%;
     right: 5%;
     transform: scale(10);
-    opacity: 0.5;
+    opacity: 0.3;
 `;
 export const TextAnimalName = styled.Text`
-    font-size: 10%;
+    font-size: 30px;
     display: flex;
     justify-content: center;
     margin-top: 5px;

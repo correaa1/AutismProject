@@ -1,14 +1,19 @@
-import * as React from "react";
-import { View, Text } from "react-native";
-import Route from "./Router/router.js";
+import React from "react";
+import { NavigationContainer } from "@react-navigation/native";
+import { createStackNavigator } from "@react-navigation/stack";
 
-import Animal from "./Categorias/Animal/index";
-import Start from "./Categorias/Start/index";
+import Home from "./pages/home/index";
+import Animals from "./pages/animals/index";
 
 export default function App() {
+    const Stack = createStackNavigator();
+
     return (
-        <NativeRouter>
-            <Route />
-        </NativeRouter>
+        <NavigationContainer>
+            <Stack.Navigator initialRouteName="Home">
+                <Stack.Screen name="Home" component={Home} />
+                <Stack.Screen name="Animals" component={Animals} />
+            </Stack.Navigator>
+        </NavigationContainer>
     );
 }
