@@ -2,49 +2,56 @@ import styled from "styled-components/native";
 
 export const Container = styled.View`
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
 `;
-export const Waves = styled.Image`
-    display: flex;
-    width: 250;
-    height: 250;
-`;
+
 export const Cloud = styled.Image`
-    display: flex;
-    width: 250;
-    height: 250;
+    width: 40%;
+    height: 70%;
+    margin-right: 50px;
 `;
-export const Clouds = styled.Image`
-    display: flex;
-    width: 250;
-    height: 250;
+
+export const Sunny = styled.Image`
+    width: 30%;
+    height: 70%;
 `;
 export const Dove = styled.Image`
-    display: flex;
-    width: 250;
-    height: 250;
+    width: 20%;
+    height: 50%;
+    margin-top: 20%;
 `;
 export const Group = styled.Image`
-    display: flex;
-    width: 250;
-    height: 250;
+    width: 20%;
+    height: 50%;
 `;
-export const Sunny = styled.Image`
-    display: flex;
-    width: 250;
-    height: 250;
+export const House = styled.Image`
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 135%;
+    left: 55%;
 `;
+
 export const Tree = styled.Image`
-    display: flex;
-    width: 250;
-    height: 250;
+    width: 30%;
+    height: 100%;
+    position: absolute;
+    top: 200;
+    right: 70%;
 `;
 export const Vector = styled.Image`
-    display: flex;
-    width: 250;
-    height: 250;
+    width: 100%;
+    height: 100%;
+    margin-top: 20%;
 `;
 export const Chrysanthemum = styled.Image`
-    display: flex;
-    width: 250;
-    height: 250;
+    width: 20%;
+    height: 30%;
+`;
+export const Waves = styled.Image`
+    width: 50%;
+    height: 100px;
 `;

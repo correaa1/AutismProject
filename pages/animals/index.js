@@ -11,7 +11,7 @@ export default function App() {
      O array de dentro é composto pelo nome do animal, require da imagem, e o require do som.
      Ou seja, para mudar o animal basta mudar o nome do diretorio e caso necessário também o formato.*/
 
-    const animals = [[/*"Gato", require("./assets/images/cat.png"),*/ require(`./assets/sounds/cat.mp3`)]];
+    const animals = [["Gato", require("./assets/images/cat.png"), require(`./assets/sounds/cat.mp3`)]];
 
     async function playSound(animalsound) {
         console.log("Loading Sound");
