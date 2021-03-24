@@ -22,13 +22,13 @@ export const Dove = styled.Image`
     width: 20%;
     height: 50%;
     position: absolute;
-    top: 100%;
+    top: 70%;
     right: 60%;
-    margin-top: 20px;
 `;
 export const Group = styled.Image`
     width: 20%;
     height: 50%;
+    margin-top: 20%;
 `;
 export const House = styled.Image`
     width: 50%;
