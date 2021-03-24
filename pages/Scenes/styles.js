@@ -21,7 +21,10 @@ export const Sunny = styled.Image`
 export const Dove = styled.Image`
     width: 20%;
     height: 50%;
-    margin-top: 20%;
+    position: absolute;
+    top: 100%;
+    right: 60%;
+    margin-top: 20px;
 `;
 export const Group = styled.Image`
     width: 20%;
