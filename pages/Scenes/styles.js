@@ -2,59 +2,38 @@ import styled from "styled-components/native";
 
 export const Container = styled.View`
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-`;
-
-export const Cloud = styled.Image`
-    width: 40%;
-    height: 70%;
-    margin-right: 50px;
 `;
 
 export const Sunny = styled.Image`
-    width: 30%;
-    height: 70%;
+    width: 40%;
+    height: 20%;
+    left: 60%;
+    top: -20%;
 `;
-export const Dove = styled.Image`
+export const Bird = styled.Image`
     width: 20%;
-    height: 50%;
-    position: absolute;
-    top: 70%;
-    right: 60%;
+    height: 7%;
+    left: 60%;
+    top: 8%;
 `;
-export const Group = styled.Image`
-    width: 20%;
-    height: 50%;
-    margin-top: 20%;
+export const Cloud = styled.Image`
+    width: 45%;
+    height: 20%;
 `;
 export const House = styled.Image`
-    width: 50%;
-    height: 100%;
-    position: absolute;
-    top: 135%;
-    left: 55%;
+    width: 48%;
+    height: 22%;
+    top: 9%;
 `;
-
 export const Tree = styled.Image`
-    width: 30%;
-    height: 100%;
-    position: absolute;
-    top: 200;
-    right: 70%;
+    width: 40%;
+    height: 20%;
+    top: -11%;
+    left: 60%;
 `;
-export const Vector = styled.Image`
+export const Grass = styled.Image`
     width: 100%;
-    height: 100%;
-    margin-top: 20%;
-`;
-export const Chrysanthemum = styled.Image`
-    width: 20%;
-    height: 30%;
-`;
-export const Waves = styled.Image`
-    width: 50%;
-    height: 100px;
+    height: 20%;
+    top: -17%;
+    left: 1%;
 `;
