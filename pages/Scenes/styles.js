@@ -5,35 +5,47 @@ export const Container = styled.View`
 `;
 
 export const Sunny = styled.Image`
-    width: 40%;
-    height: 20%;
+    width: 35%;
+    height: 12%;
     left: 60%;
-    top: -20%;
+    top: -10%;
+`;
+export const Rainbow = styled.Image`
+    width: 100%;
+    height: 25%;
+    top: -5%;
 `;
 export const Bird = styled.Image`
-    width: 20%;
-    height: 7%;
+    width: 15%;
+    height: 4%;
     left: 60%;
-    top: 8%;
+    top: 5%;
 `;
 export const Cloud = styled.Image`
-    width: 45%;
-    height: 20%;
+    width: 40%;
+    height: 11%;
 `;
 export const House = styled.Image`
-    width: 48%;
-    height: 22%;
-    top: 9%;
+    width: 50%;
+    height: 20%;
+    top: 3%;
 `;
 export const Tree = styled.Image`
-    width: 40%;
-    height: 20%;
-    top: -11%;
+    width: 37%;
+    height: 15%;
+    top: -12%;
     left: 60%;
 `;
-export const Grass = styled.Image`
+export const BackgroundGrass = styled.View`
+    background-color: #31b934;
+    height: 25%;
     width: 100%;
-    height: 20%;
-    top: -17%;
-    left: 1%;
+    top: -13%;
+`;
+
+export const Background = styled.View`
+    background-color: #88d9ff;
+`;
+export const Click = styled.View`
+    background-color: #626262;
 `;
