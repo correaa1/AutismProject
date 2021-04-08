@@ -1,31 +1,30 @@
-import { Text, StatusBar, Image, TouchableOpacity, View, StyleSheet } from "react-native";
+import { Text, StatusBar, Image, TouchableOpacity, View, StyleSheet, Alert } from "react-native";
 import React, { Component } from "react";
-import { Container, House, Cloud, Sunny, Bird, Tree, BackgroundGrass, Background, Rainbow } from "./styles";
+import { Container, House, Cloud, Sunny, Bird, Tree, Background, Rainbow } from "./styles";
 
 class Scene extends Component {
-    /*   constructor(props){
-       super(props);    
-       this.click=0;
-       this.vai= this.vai.bind(this);
+    state = {
+        selectButton: "",
+    };
 
-       }
-       click(){
-           if (this.click != 0) {
-return(
-    <>
-)
-           }
-            
-       }
-*/
+    changeColor() {
+        if (!this.state.pressed) {
+            this.setState({ pressed: true, tintColor: "gray" });
+        } else {
+            this.setState({ pressed: false, tintColor: "none" });
+        }
+    }
     render() {
         return (
             <Container>
                 <Background>
-                    <Cloud source={require("./src/Cloud.png")} />
+                    <TouchableOpacity onPress={() => this.changeColor()}>
+                        <Cloud style={{ tintColor: "gray" }} source={require("./src/Cloud.png")} />
+                    </TouchableOpacity>
 
-                    <Sunny source={require("./src/Sunny.png")} />
-
+                    <TouchableOpacity style={{ tintColor: this.state.selectedButton === "button1" ? "gray" : "none", padding: 15 }} onPress={() => this.setState({ selectedButton: "button1" })}>
+                        <Sunny style={{ tintColor: this.state.selectedButton === "button1" ? "gray" : "none", padding: 15 }} onPress={() => this.setState({ selectedButton: "button1" })} onPress={() => this.setState({ selectedButton: "button1" })} source={require("./src/Sunny.png")} />
+                    </TouchableOpacity>
                     <Rainbow source={require("./src/Rainbow.png")} />
 
                     <Bird source={require("./src/Bird.png")} />
@@ -33,8 +32,6 @@ return(
                     <House source={require("./src/House.png")} />
 
                     <Tree source={require("./src/Tree.png")} />
-
-                    <BackgroundGrass></BackgroundGrass>
                 </Background>
             </Container>
         );

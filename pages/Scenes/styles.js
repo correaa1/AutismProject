@@ -5,8 +5,8 @@ export const Container = styled.View`
 `;
 
 export const Sunny = styled.Image`
-    width: 35%;
-    height: 12%;
+    width: 50%;
+    height: 30%;
     left: 60%;
     top: -10%;
 `;
@@ -23,7 +23,7 @@ export const Bird = styled.Image`
 `;
 export const Cloud = styled.Image`
     width: 40%;
-    height: 11%;
+    height: 15%;
 `;
 export const House = styled.Image`
     width: 50%;
@@ -36,16 +36,11 @@ export const Tree = styled.Image`
     top: -12%;
     left: 60%;
 `;
-export const BackgroundGrass = styled.View`
-    background-color: #31b934;
-    height: 25%;
-    width: 100%;
-    top: -13%;
-`;
 
 export const Background = styled.View`
     background-color: #88d9ff;
 `;
-export const Click = styled.View`
-    background-color: #626262;
+export const Button = styled.TouchableOpacity`
+    height: 11%;
+    width: 20%;
 `;
