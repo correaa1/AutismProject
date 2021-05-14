@@ -1,6 +1,6 @@
 import { Button, View, Text, Image } from "react-native";
 import React from "react";
-import { Container } from "./styles";
+import { Containe } from "./styles";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 
@@ -10,7 +10,9 @@ export default function Start({ navigation }) {
             <Text>Pagina inicial</Text>
 
             <View style={{ marginBottom: 5 }}>
-                <Button title="Ir para lista de animais" onPress={() => navigation.navigate("Kitchen")} />
+                <Button title="Animais" onPress={() => navigation.navigate("Animals")} />
+                <Button title="Frutas" onPress={() => navigation.navigate("Fruit")} />
+                <Button title="Objeto de cozinha" onPress={() => navigation.navigate("Kitchen")} />
             </View>
         </View>
     );
