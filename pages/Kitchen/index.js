@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Audio } from "expo-av";
 import { StatusBar } from "react-native";
-import backgroundbganimals from "./assets/background.png";
+/*import backgroundbganimals from "./assets/background.png";*/
 import { Container, ImageAnimals, ImageBackgroundAnimals, ButtonAction, ViewAnimalsAction, TextAnimalName, ImageBackground } from "./styles";
 
 export default function App() {
@@ -11,17 +11,15 @@ export default function App() {
      O array de dentro é composto pelo nome do animal, require da imagem, e o require do som.
      Ou seja, para mudar o animal basta mudar o nome do diretorio e caso necessário também o formato.*/
 
-    const animals = [
-        ["Gato", require("./assets/images/cat.png"), require(`./assets/sounds/cat.mp3`)],
-        ["Vaca", require("./assets/images/cow.png"), require(`./assets/sounds/cow.mp3`)],
-        ["Cachorro", require("./assets/images/dog.png"), require(`./assets/sounds/dog.mp3`)],
-        ["Elefante", require("./assets/images/elephant.png"), require(`./assets/sounds/elephant.mp3`)],
-        ["Galo", require("./assets/images/rooster.png"), require(`./assets/sounds/rooster.mp3`)],
-        ["Cavalo", require("./assets/images/horse.png"), require(`./assets/sounds/horse.mp3`)],
-        ["Coruja", require("./assets/images/owl.png"), require(`./assets/sounds/owl.mp3`)],
-        ["Porco", require("./assets/images/pig.png"), require(`./assets/sounds/pig.mp3`)],
-        ["Ovelha", require("./assets/images/sheep.png"), require(`./assets/sounds/sheep.mp3`)],
-        ["Lobo", require("./assets/images/wolf.png"), require(`./assets/sounds/wolf.mp3`)],
+    const kitchen = [
+        ["Cadeira", require("../Kitchen/src/cadeira.png"), require(`./sound/cat.mp3`)],
+        ["Mesa", require("../Kitchen/src/mesa.png"), require(`./sound/cat.mp3`)],
+        ["Colher", require("../Kitchen/src/colher.png"), require(`./sound/cat.mp3`)],
+        ["Garfo", require("../Kitchen/src/garfo.png"), require(`./sound/cat.mp3`)],
+        ["Faca", require("../Kitchen/src/faca.png"), require(`./sound/cat.mp3`)],
+        ["Copo", require("../Kitchen/src/copo.png"), require(`./sound/cat.mp3`)],
+        ["Fogão", require("../Kitchen/src/fogao.png"), require(`./sound/cat.mp3`)],
+        ["Geladeira", require("../Kitchen/src/geladeira.png"), require(`./sound/cat.mp3`)],
     ];
 
     async function playSound(animalsound) {
@@ -46,10 +44,9 @@ export default function App() {
     return (
         <>
             <StatusBar barStyle="light-content" backgroundColor="#fff" />
-            <ImageBackground source={backgroundbganimals} />
             <Container>
                 <ViewAnimalsAction>
-                    {animals.map((elem, index) => {
+                    {kitchen.map((elem, index) => {
                         return (
                             <ButtonAction
                                 key={index}

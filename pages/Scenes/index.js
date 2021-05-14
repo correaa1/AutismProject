@@ -22,8 +22,8 @@ class Scene extends Component {
                         <Cloud style={{ tintColor: "gray" }} source={require("./src/Cloud.png")} />
                     </TouchableOpacity>
 
-                    <TouchableOpacity style={{ tintColor: this.state.selectedButton === "button1" ? "gray" : "none", padding: 15 }} onPress={() => this.setState({ selectedButton: "button1" })}>
-                        <Sunny style={{ tintColor: this.state.selectedButton === "button1" ? "gray" : "none", padding: 15 }} onPress={() => this.setState({ selectedButton: "button1" })} onPress={() => this.setState({ selectedButton: "button1" })} source={require("./src/Sunny.png")} />
+                    <TouchableOpacity style={{ tintColor: this.state.selectedButton === "button1" ? "none" : "gray", padding: 15 }} onPress={() => this.setState({ selectedButton: "button1" })}>
+                        <Sunny style={{ tintColor: this.state.selectedButton === "button1" ? "none" : "gray", padding: 15 }} onPress={() => this.setState({ selectedButton: "button1" })} onPress={() => this.setState({ selectedButton: "button1" })} source={require("./src/Sunny.png")} />
                     </TouchableOpacity>
                     <Rainbow source={require("./src/Rainbow.png")} />
 

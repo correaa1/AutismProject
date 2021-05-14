@@ -10,7 +10,7 @@ export default function Start({ navigation }) {
             <Text>Pagina inicial</Text>
 
             <View style={{ marginBottom: 5 }}>
-                <Button title="Ir para lista de animais" onPress={() => navigation.navigate("Scenes")} />
+                <Button title="Ir para lista de animais" onPress={() => navigation.navigate("Kitchen")} />
             </View>
         </View>
     );
