@@ -1,8 +1,16 @@
 import styled from "styled-components/native";
 
 export const Container = styled.View`
-    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    background-color: #000022;
 `;
-export const Button = styled.View`
-    background-color: green, height 50%, width 50%;
+export const TouchableOpacity = styled.View`
+    flex: 1;
+`;
+export const Welcome = styled.Text`
+    font-size: 40px;
+    color: #1e6df2;
+    top: -30%;
 `;
