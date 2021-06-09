@@ -1,8 +1,7 @@
-import { Button, View, Text, Image } from "react-native";
+import { View, Text, Image, TouchableOpacity } from "react-native";
 import React from "react";
-import { Contain, Welcome } from "./styles";
-import { NavigationContainer } from "@react-navigation/native";
-import { createStackNavigator } from "@react-navigation/stack";
+
+import { Welcome, Button } from "./styles";
 
 export default function Start({ navigation }) {
     return (
@@ -13,6 +12,7 @@ export default function Start({ navigation }) {
                 <Button title="Animais" onPress={() => navigation.navigate("Animals")} />
                 <Button title="Frutas" onPress={() => navigation.navigate("Fruit")} />
                 <Button title="Objeto de cozinha" onPress={() => navigation.navigate("Kitchen")} />
+                <Button color="#ff5c5c" title="Cenas" onPress={() => navigation.navigate("Scenes")} />
             </View>
         </View>
     );

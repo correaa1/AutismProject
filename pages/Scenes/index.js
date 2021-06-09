@@ -1,41 +1,25 @@
-import { Text, StatusBar, Image, TouchableOpacity, View, StyleSheet, Alert } from "react-native";
-import React, { Component } from "react";
-import { Container, House, Cloud, Sunny, Bird, Tree, Background, Rainbow } from "./styles";
+import React, { useState } from "react";
+import { Text, Image, Button, View, TouchableOpacity } from "react-native";
 
-class Scene extends Component {
-    state = {
-        selectButton: "",
-    };
+import ButtonImage from "./components/ButtonImage";
 
-    changeColor() {
-        if (!this.state.pressed) {
-            this.setState({ pressed: true, tintColor: "gray" });
-        } else {
-            this.setState({ pressed: false, tintColor: "none" });
-        }
-    }
-    render() {
-        return (
-            <Container>
-                <Background>
-                    <TouchableOpacity onPress={() => this.changeColor()}>
-                        <Cloud style={{ tintColor: "gray" }} source={require("./src/Cloud.png")} />
-                    </TouchableOpacity>
-
-                    <TouchableOpacity style={{ tintColor: this.state.selectedButton === "button1" ? "none" : "gray", padding: 15 }} onPress={() => this.setState({ selectedButton: "button1" })}>
-                        <Sunny style={{ tintColor: this.state.selectedButton === "button1" ? "none" : "gray", padding: 15 }} onPress={() => this.setState({ selectedButton: "button1" })} onPress={() => this.setState({ selectedButton: "button1" })} source={require("./src/Sunny.png")} />
-                    </TouchableOpacity>
-                    <Rainbow source={require("./src/Rainbow.png")} />
-
-                    <Bird source={require("./src/Bird.png")} />
-
-                    <House source={require("./src/House.png")} />
-
-                    <Tree source={require("./src/Tree.png")} />
-                </Background>
-            </Container>
-        );
-    }
+import { Container, Teste } from "./styles";
+function Scenes2() {
+    return (
+        <Container>
+            {/* <ButtonImage imagePath={require("./src/Tree.png")} /> */}
+            <ButtonImage imagePath={require("./src/cloud.png")} initialOpacity={0.4} />
+            <ButtonImage imagePath={require("./src/cloud2.png")} initialOpacity={0.3} />
+            <ButtonImage imagePath={require("./src/house1.png")} initialOpacity={0.3} />
+            <ButtonImage imagePath={require("./src/sun.png")} initialOpacity={0.2} />
+            <ButtonImage imagePath={require("./src/tree1.png")} initialOpacity={0.2} />
+            <ButtonImage imagePath={require("./src/waves.png")} initialOpacity={0.1} />
+            <ButtonImage imagePath={require("./src/ground.png")} initialOpacity={0.2} />
+            <ButtonImage imagePath={require("./src/dove.png")} initialOpacity={0.2} />
+            <ButtonImage imagePath={require("./src/flowers.png")} initialOpacity={0.2} />
+            <ButtonImage imagePath={require("./src/flower.png")} initialOpacity={0.2} />
+        </Container>
+    );
 }
 
-export default Scene;
+export default Scenes2;

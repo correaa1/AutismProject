@@ -6,11 +6,11 @@ export const Container = styled.View`
     align-items: center;
     background-color: #000022;
 `;
-export const TouchableOpacity = styled.View`
-    flex: 1;
-`;
+
 export const Welcome = styled.Text`
     font-size: 40px;
     color: #1e6df2;
     top: -30%;
 `;
+
+export const Button = styled.Button``;
