@@ -11,7 +11,7 @@ export default function App() {
      O array de dentro é composto pelo nome do animal, require da imagem, e o require do som.
      Ou seja, para mudar o animal basta mudar o nome do diretorio e caso necessário também o formato.*/
 
-    const kitchen = [
+    const Object = [
         ["Cadeira", require("../Kitchen/src/cadeira.png"), require(`./sound/cat.mp3`)],
         ["Mesa", require("../Kitchen/src/mesa.png"), require(`./sound/cat.mp3`)],
         ["Colher", require("../Kitchen/src/colher.png"), require(`./sound/cat.mp3`)],

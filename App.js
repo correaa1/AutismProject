@@ -5,7 +5,6 @@ import { createStackNavigator } from "@react-navigation/stack";
 import Home from "./pages/home/index";
 import Animals from "./pages/animals/index";
 import Fruit from "./pages/Fruit/index";
-import Kitchen from "./pages/Kitchen/index";
 import Scenes from "./pages/Scenes/index";
 
 export default function App() {
@@ -15,10 +14,9 @@ export default function App() {
         <>
             <NavigationContainer>
                 <Stack.Navigator initialRouteName="Home">
-                    <Stack.Screen name="Inicio" component={Home} />
+                    <Stack.Screen name="Home" component={Home} />
                     <Stack.Screen name="Animals" component={Animals} />
                     <Stack.Screen name="Fruit" component={Fruit} />
-                    <Stack.Screen name="Kitchen" component={Kitchen} />
                     <Stack.Screen name="Scenes" component={Scenes} />
                 </Stack.Navigator>
             </NavigationContainer>

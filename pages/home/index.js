@@ -9,9 +9,9 @@ export default function Start({ navigation }) {
             <Welcome>BEM VINDO</Welcome>
 
             <View style={{ marginBottom: 5 }}>
-                <Button title="Animais" onPress={() => navigation.navigate("Animals")} />
-                <Button title="Frutas" onPress={() => navigation.navigate("Fruit")} />
-                <Button title="Objeto de cozinha" onPress={() => navigation.navigate("Kitchen")} />
+                <Button title="Animals" onPress={() => navigation.navigate("Animals")} />
+                <Button title="Fruits" onPress={() => navigation.navigate("Fruit")} />
+                <Button title="Kitchen" onPress={() => navigation.navigate("Kitchen")} />
                 <Button color="#ff5c5c" title="Cenas" onPress={() => navigation.navigate("Scenes")} />
             </View>
         </View>
