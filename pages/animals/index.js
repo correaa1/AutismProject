@@ -45,7 +45,7 @@ export default function App() {
 
     return (
         <>
-            <StatusBar barStyle="light-content" backgroundColor="#fff" />
+            <StatusBar barStyle="light-content" backgroundColor="transparent" translucent/>
             <ImageBackground source={backgroundbganimals} />
             <Container>
                 <ViewAnimalsAction>
@@ -57,7 +57,7 @@ export default function App() {
                                     playSound(elem[2]);
                                 }}
                             >
-                                <ImageAnimals source={elem[1]} />
+                                <ImageAnimals  source={elem[1]} />
                                 <ImageBackgroundAnimals source={elem[1]} />
                                 <TextAnimalName>{elem[0]}</TextAnimalName>
                             </ButtonAction>
