@@ -1,18 +1,26 @@
 import { View, Text, Image, TouchableOpacity } from "react-native";
 import React from "react";
+import styled from 'styled-components'
+import {Button} from 'react-native-paper'
 
-import { Welcome, Button } from "./styles";
+
+
+import { Welcome } from "./styles";
+
 
 export default function Start({ navigation }) {
     return (
         <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-            <Welcome>BEM VINDO</Welcome>
+            
 
             <View style={{ marginBottom: 5 }}>
-                <Button title="Animals" onPress={() => navigation.navigate("Animals")} />
-                <Button title="Fruits" onPress={() => navigation.navigate("Fruit")} />
+                <Welcome title="Animals" onPress={() => navigation.navigate("Animals")} />
+                <Button title="Button" onPress={() => navigation.navigate("Button")} />
                 <Button title="Kitchen" onPress={() => navigation.navigate("Kitchen")} />
                 <Button color="#ff5c5c" title="Cenas" onPress={() => navigation.navigate("Scenes")} />
+                <Button color="#004a95" mode="contained" onPress={() => navigation.navigate("Categorias")}>
+                    Começar
+</Button>
             </View>
         </View>
     );
