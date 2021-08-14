@@ -6,6 +6,7 @@ import Categorias from "./pages/Categorias/index";
 import Home from "./pages/home/index";
 import Animals from "./pages/animals/index";
 import Scenes from "./pages/Scenes/index";
+import Toobar from "./pages/Toobar/index";
 
 
 export default function App() {
@@ -16,7 +17,8 @@ export default function App() {
     return (
         <>
             <NavigationContainer>
-                <Stack.Navigator  initialRouteName="Categorias" >
+                <Stack.Navigator  initialRouteName="Toobar" >
+                <Stack.Screen name="Toobar" component={Toobar}activeOperacity={0.2} />
                 <Stack.Screen name="Categorias" component={Categorias}activeOperacity={0.2} />
                     <Stack.Screen name="Home" component={Home}activeOperacity={0.2} />
                     <Stack.Screen name="Animals" component={Animals} />

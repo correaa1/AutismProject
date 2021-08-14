@@ -14,6 +14,7 @@ export default function Start({ navigation }) {
             
 
             <View style={{ marginBottom: 5 }}>
+            <Welcome title="Toobar" onPress={() => navigation.navigate("Toobar")} />
                 <Welcome title="Animals" onPress={() => navigation.navigate("Animals")} />
                 <Button title="Button" onPress={() => navigation.navigate("Button")} />
                 <Button title="Kitchen" onPress={() => navigation.navigate("Kitchen")} />
