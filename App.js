@@ -10,6 +10,7 @@ import Toobar from "./pages/Toobar/index";
 
 
 export default function App() {
+    
     const Stack = createStackNavigator();
    
 
@@ -17,6 +18,8 @@ export default function App() {
     return (
         <>
             <NavigationContainer>
+
+                
                 <Stack.Navigator  initialRouteName="Toobar" >
                 <Stack.Screen name="Toobar" component={Toobar}activeOperacity={0.2} />
                 <Stack.Screen name="Categorias" component={Categorias}activeOperacity={0.2} />
@@ -24,6 +27,9 @@ export default function App() {
                     <Stack.Screen name="Animals" component={Animals} />
                     <Stack.Screen name="Scenes" component={Scenes} />
                 </Stack.Navigator>
+
+   
+
             </NavigationContainer>
         </>
     );
