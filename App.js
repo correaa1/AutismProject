@@ -1,36 +1,36 @@
-import React from "react";
+import * as React from "react";
 import { NavigationContainer, } from "@react-navigation/native";
-import { createStackNavigator } from "@react-navigation/stack";
+import { BottomNavigation, Text } from 'react-native-paper';
 
 import Categorias from "./pages/Categorias/index";
 import Home from "./pages/home/index";
 import Animals from "./pages/animals/index";
 import Scenes from "./pages/Scenes/index";
-import Toobar from "./pages/Toobar/index";
 
 
-export default function App() {
+ const MusicRoHoute = () => <Text  >Home</Text>;    
+    const RecentsRoute = () => <Text>Configurações</Text>;
     
-    const Stack = createStackNavigator();
-   
+    const MyComponent = () => {
+      const [index, setIndex] = React.useState(0);
+      const [routes] = React.useState([
+        { key: 'Home', title: 'Home',  },
+        { key: 'Configurações', title: 'Configurações', icon: 'history', },
+      ]);
+    
+      const renderScene = BottomNavigation.SceneMap({
+        Home: Home, 
+        Configurações: RecentsRoute,
+      });
 
-
-    return (
-        <>
-            <NavigationContainer>
-
-                
-                <Stack.Navigator  initialRouteName="Toobar" >
-                <Stack.Screen name="Toobar" component={Toobar}activeOperacity={0.2} />
-                <Stack.Screen name="Categorias" component={Categorias}activeOperacity={0.2} />
-                    <Stack.Screen name="Home" component={Home}activeOperacity={0.2} />
-                    <Stack.Screen name="Animals" component={Animals} />
-                    <Stack.Screen name="Scenes" component={Scenes} />
-                </Stack.Navigator>
-
-   
-
-            </NavigationContainer>
-        </>
-    );
-}
+        return (
+            <BottomNavigation
+            barStyle={{ backgroundColor: '#3057b1' }}
+              navigationState={{ index, routes }}
+              onIndexChange={setIndex}
+              renderScene={renderScene}
+            />
+          );
+        };
+        
+        export default MyComponent;

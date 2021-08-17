@@ -4,13 +4,5 @@ export const Container = styled.View`
     flex: 1;
     justify-content: center;
     align-items: center;
-    background-color: #000022;
+    background-color: #20226c;
 `;
-
-export const Welcome = styled.Text`
-    font-size: 40px;
-    color: #1e6df2;
-    top: -30%;
-`;
-
-export const Button = styled.Button``;
