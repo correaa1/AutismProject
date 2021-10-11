@@ -1,27 +1,21 @@
 import * as React from 'react';
-import { Avatar, Button, Card, Title, Paragraph } from 'react-native-paper';
+import { Avatar, Button, Card, IconButton, Paragraph } from 'react-native-paper';
 import { Container} from "./styles";
+import Animals from '../animals/index'
+import Home from '../home/index'
 
 
-const LeftContent = props => <Avatar.Icon {...props} icon="folder" />
-
-const MyComponent = () => (
-  <Container>
- <Card>
-    <Card.Title title="Card Title" subtitle="Card Subtitle" left={LeftContent} />
+export default  function Categorias (){
+  const MyComponent = () => (
+    <Card.Title
+      title="Card Title"
+      subtitle="Card Subtitle"
+      left={(props) => <Avatar.Icon {...props} icon="folder" />}
+      right={(props) => <IconButton {...props} icon="more-vert" onPress={() => {}} />}
+    />
+  );
   
-    <Card.Cover source ={{ uri: 'https://picsum.photos/700' }} />
-    <Card.Actions>
-    </Card.Actions>
-  <Card.Cover source ={{ uri: 'https://picsum.photos/700' }}  />
-  <Card.Actions>
-    </Card.Actions>
-  <Card.Cover source ={{ uri: 'https://picsum.photos/700' }} />
-    </Card>
   
-  </Container>
-
-
-);
-
-export default MyComponent;
+  
+  
+};

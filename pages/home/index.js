@@ -1,17 +1,27 @@
-import { View, Text, Image, TouchableOpacity } from "react-native";
-import * as React from 'react';
+import { View, Text, Image, TouchableOpacity, BackHandler } from "react-native";
+import  React, {useState} from 'react';
 import { Button } from 'react-native-paper';
 import { Container} from "./styles";
+import Animals from "../animals/index"
+import Home from "../home/index"
+
+  
+export default function App(){
 
 
-
-const MyComponent = () => (
+const [page, setPage] = useState(0);
+  const currentPage = [<></>, <Animals />, <Home />, ];
+  return(<>
+    {currentPage[page]}
+ 
     <Container> 
-        
-        <Button color='#3057b1'
- icon={require('./src/autism.png' ) } mode="contained" onPress={() => console.log('Pressed')}>
-      Aperte para começar!
-    </Button>
-    </Container>
-  );
-  export default MyComponent;
+ 
+               <Button color='#3057b1'
+ icon={require('./src/autism.png' ) } mode="contained"onPress={() =>  setPage(1) }
+ > Aperte para começar!
+    </Button>   
+    </Container></>
+)
+
+
+  }
