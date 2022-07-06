@@ -1,6 +1,6 @@
 import styled from 'styled-components/native';
 
-export const Container = styled.View`
+export const Card = styled.TouchableOpacity`
 align-items:stretch ;
 justify-content: center;
 `;

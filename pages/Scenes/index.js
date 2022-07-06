@@ -8,7 +8,7 @@ function Scenes2() {
     return (
         <Container>
             <Cloud>
-                <ButtonImage imagePath={require("./src/cloud.png")} initialOpacity={0.4} />
+                <ButtonImage imagePath={require("./src/Cloud.png")} initialOpacity={0.4} />
             </Cloud>
             <Cloud2>
                 <ButtonImage  imagePath={require("./src/cloud2.png")} initialOpacity={0.3} />

@@ -13,15 +13,15 @@ export default function App() {
 
     const animals = [
         ["Gato", require("./assets/images/cat.png"), require(`./assets/sounds/cat.mp3`)],
-        ["Vaca", require("./assets/images/cow.png"), require(`./assets/sounds/cow.mp3`)],
-        ["Cachorro", require("./assets/images/dog.png"), require(`./assets/sounds/dog.mp3`)],
-        ["Elefante", require("./assets/images/elephant.png"), require(`./assets/sounds/elephant.mp3`)],
-        ["Galo", require("./assets/images/rooster.png"), require(`./assets/sounds/rooster.mp3`)],
+        ["Vaca", require("./assets/images/cow.png"), require(`./assets/sounds/Cow.mp3`)],
+        ["Cachorro", require("./assets/images/dog.png"), require(`./assets/sounds/Dog.mp3`)],
+        ["Elefante", require("./assets/images/elephant.png"), require(`./assets/sounds/Elephant.mp3`)],
+        ["Galo", require("./assets/images/rooster.png"), require(`./assets/sounds/Rooster.mp3`)],
         ["Cavalo", require("./assets/images/horse.png"), require(`./assets/sounds/horse.mp3`)],
-        ["Coruja", require("./assets/images/owl.png"), require(`./assets/sounds/owl.mp3`)],
-        ["Porco", require("./assets/images/pig.png"), require(`./assets/sounds/pig.mp3`)],
-        ["Ovelha", require("./assets/images/sheep.png"), require(`./assets/sounds/sheep.mp3`)],
-        ["Lobo", require("./assets/images/wolf.png"), require(`./assets/sounds/wolf.mp3`)],
+        ["Coruja", require("./assets/images/owl.png"), require(`./assets/sounds/Owl.mp3`)],
+        ["Porco", require("./assets/images/pig.png"), require(`./assets/sounds/Pig.mp3`)],
+        ["Ovelha", require("./assets/images/sheep.png"), require(`./assets/sounds/Sheep.mp3`)],
+        ["Lobo", require("./assets/images/Wolf.png"), require(`./assets/sounds/Wolf.mp3`)],
     ];
 
     async function playSound(animalsound) {

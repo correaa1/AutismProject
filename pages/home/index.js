@@ -4,13 +4,13 @@ import { Button } from 'react-native-paper';
 import { Container} from "./styles";
 import Animals from "../animals/index"
 import Home from "../home/index"
-
+import Scenes from "../Scenes/index"
   
 export default function App(){
 
 
 const [page, setPage] = useState(0);
-  const currentPage = [<></>, <Animals />, <Home />, ];
+  const currentPage = [<></>, <Scenes />, <Home /> ];
   return(<>
     {currentPage[page]}
  

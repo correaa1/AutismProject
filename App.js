@@ -15,7 +15,7 @@ import Scenes from "./pages/Scenes/index";
       const [index, setIndex] = React.useState(0);
       const [routes] = React.useState([
         { key: 'Home', title: 'Home',  },
-        { key: 'Categorias', title: 'Categoorias', icon: 'history', },
+       // { key: 'Categorias', title: 'Categorias', icon: 'history', },
       ]);
     
       const renderScene = BottomNavigation.SceneMap({
