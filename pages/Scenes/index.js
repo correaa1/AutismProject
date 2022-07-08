@@ -3,7 +3,7 @@ import { Text, Image, Button, View, TouchableOpacity } from "react-native";
 
 import ButtonImage from "./components/ButtonImage";
 
-import { Container,  Cloud, Cloud2, House,Sun,Tree } from "./styles";
+import { Container,  Cloud, Cloud2, Home,Sun,Tree,Gram,Bird,Plane } from "./styles";
 function Scenes2() {
     return (
         <Container>
@@ -13,18 +13,24 @@ function Scenes2() {
             <Cloud2>
                 <ButtonImage  imagePath={require("./src/cloud2.png")} initialOpacity={0.3} />
             </Cloud2>
-            <House>
-                <ButtonImage  imagePath={require("./src/house1.png")} initialOpacity={0.3} />
-            </House>
+            <Home>
+                <ButtonImage  imagePath={require("./src/Home.png")} initialOpacity={0.3} />
+            </Home>
            <Sun>
                 <ButtonImage imagePath={require("./src/sun.png")} initialOpacity={0.2} />
            </Sun>
            <Tree> 
                <ButtonImage imagePath={require("./src/tree1.png")} initialOpacity={0.2} />
            </Tree>
-         
-         
-         
+         <Gram>
+         </Gram>
+         <Bird> 
+         <ButtonImage   imagePath={require("./src/Bird.png")} initialOpacity={0.3} />
+         </Bird   >
+        <Plane>
+        <ButtonImage  imagePath={require("./src/Plane.png")} initialOpacity={0.3} />
+        </Plane>
+
         </Container>
     );
 }
