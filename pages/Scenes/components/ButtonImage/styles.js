@@ -5,5 +5,6 @@ display: flex;
 `;
 export const Image = styled.Image`
     width: 100%;
-    height:100px;
+    height:100%;
+   
 `;
