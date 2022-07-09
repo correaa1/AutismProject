@@ -31,6 +31,7 @@ import Scenes from "./pages/Scenes/index";
               navigationState={{ index, routes }}
               onIndexChange={setIndex}
               renderScene={renderScene}
+              onPress={() => renderScene(0)}
               
             />
             </NavigationContainer>
@@ -40,7 +41,6 @@ import Scenes from "./pages/Scenes/index";
     
         };
         
-        
-  
+    
         export default MyComponent;
 

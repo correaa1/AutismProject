@@ -1,7 +1,7 @@
 import { View, Text, Image, TouchableOpacity, BackHandler } from "react-native";
 import  React, {useState} from 'react';
 import { Button } from 'react-native-paper';
-import { Container,Card,Card2} from "./styles";
+import { Container,Card,Texto} from "./styles";
 import Animals from "../animals/index"
 import Home from "../home/index"
 import Scenes from "../Scenes/index"
@@ -10,7 +10,7 @@ export default function App(){
 
 
 const [page, setPage] = useState(0);
-  const currentPage = [<></>, <Scenes />, <Animals /> ];
+  const currentPage = [<></>, <Animals />, <Scenes /> ];
   return(<>
     {currentPage[page]}
  
@@ -18,12 +18,12 @@ const [page, setPage] = useState(0);
  
                <Card 
  icon={require('./src/autism.png' ) } mode="contained"onPress={() =>  setPage(1) }
- ><Text>Atividade1!</Text> 
+ ><Texto>Descubra o animal</Texto> 
     </Card>   
-    <Card2 
+    <Card 
  icon={require('./src/autism.png' ) } mode="contained"onPress={() =>  setPage(2) }
- ><Text>Atividade2!</Text> 
-    </Card2>   
+ ><Texto>Vamos pintar</Texto> 
+    </Card>   
     </Container></>
 )
 

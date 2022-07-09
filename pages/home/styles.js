@@ -4,19 +4,18 @@ export const Container = styled.View`
     flex: 1;
     justify-content: center;
     align-items: center;
-    background-color: #20226c;
+    background-color: #0080ff;
 `;
 export const Card = styled.TouchableOpacity`
-    flex: 1;
+    width: 50%;
+    height:10% ;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: '#20226c';
-    color:'#3057b1';
+    background-color: #0f87ff;
+    border:1px;
+    margin-top:5%
 `;
-export const Card2 = styled.TouchableOpacity`
-    flex: 1;
-    justify-content: center;
-    align-items: center;
-    background-color: '#20226c';
-    color:'#3057b1';
+export const Texto = styled.Text`
+    color: #ffffff;
 `;
