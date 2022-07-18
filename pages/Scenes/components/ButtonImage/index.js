@@ -3,11 +3,18 @@ import { Text, Button, View, TouchableOpacity } from "react-native";
 
 import { Container, Image } from "./styles";
 
-function ButtonImage({ imagePath, initialOpacity = 0.1, onCustomClick }) {
-    const [opacity, setOpacity] = useState(initialOpacity);
+function ButtonImage({ imagePath, playSoundFunction }) {
+    const [opacity, setOpacity] = useState(0.1);
+
+    const setColorAndPlaySound = () => {
+        setOpacity(1); 
+        playSoundFunction();
+    }
    
     return (
-        <TouchableOpacity activeOpacity={0.1} onPress={()  => {onCustomClick(); setOpacity(1); }}>
+        <TouchableOpacity 
+            activeOpacity={0.1} 
+            onPress={setColorAndPlaySound}>
             <Image source={imagePath} opacity={opacity} />
         </TouchableOpacity>
     );
