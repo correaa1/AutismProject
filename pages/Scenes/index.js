@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import { Text, Image, Button, View, TouchableOpacity } from "react-native";
+import { Audio } from "expo-av";
 
-import ButtonImage from "./components/ButtonImage";
 
-import { Container,  Cloud, Cloud2, Home,Sun,Tree,Tree2,Gram,Bird,Plane,ImageAnimals, ImageBackgroundAnimals, ButtonAction, ViewAnimalsAction, TextAnimalName, ImageBackground } from "./styles";
+import { Container,  Cloud, Cloud2, Home,Sun,Tree,Tree2,Gram,Bird,Plane} from "./styles";
 function Scenes2() {
   
+  
+
     const [sound, setSound] = React.useState();
 
     /*Abaixo é o array dos animais, cada elemento do array tem outro array dentro.
@@ -32,29 +34,41 @@ function Scenes2() {
               }
             : undefined;
     }, [sound]);
+    const [opacity, setOpacity] = useState(0.1);
 
+    function ButtonImage({ imagePath, initialOpacity = 0.1, sound }) {
+      
+      
+        
+       
+        return (
+            <TouchableOpacity activeOpacity={0.1} onPress={()  => {playSound(animals[sound]); setOpacity(5); }}>
+                <Image source={imagePath} opacity={opacity} />
+            </TouchableOpacity>
+        );
+    }
 
     return (
         <Container>
             <Cloud>
-                <ButtonImage onPress={() => {playSound(animals[0])}} imagePath={require("./src/Cloud.png")} initialOpacity={0.4} />
+                <ButtonImage sound={0} imagePath={require("./src/Cloud.png")} initialOpacity={0.4} />
             </Cloud>
             <Cloud2>
-                <ButtonImage  imagePath={require("./src/cloud2.png")} initialOpacity={0.3} />
+                <ButtonImage onPress={() => {playSound(animals[0])}}  imagePath={require("./src/cloud2.png")} initialOpacity={0.3} />
             </Cloud2>
             <Home>
-                <ButtonImage  imagePath={require("./src/Home.png")} initialOpacity={0.3} />
+                <ButtonImage onPress={() => {playSound(animals[0])}}  imagePath={require("./src/Home.png")} initialOpacity={0.3} />
             </Home>
            <Sun>
-                <ButtonImage imagePath={require("./src/sun.png")} initialOpacity={0.2} />
+                <ButtonImage onPress={() => {playSound(animals[0])}} imagePath={require("./src/sun.png")} initialOpacity={0.2} />
            </Sun>
           
            <Tree> 
-               <ButtonImage imagePath={require("./src/Tree1.png")} initialOpacity={0.2} />
+               <ButtonImage onPress={() => {playSound(animals[0])}} imagePath={require("./src/Tree1.png")} initialOpacity={0.2} />
            </Tree>
          
            <Tree2> 
-               <ButtonImage imagePath={require("./src/Tree1.png")} initialOpacity={0.2} />
+               <ButtonImage onPress={() => {playSound(animals[0])}} imagePath={require("./src/Tree1.png")} initialOpacity={0.2} />
            </Tree2>
 
            <Gram>
