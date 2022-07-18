@@ -57,7 +57,7 @@ export const Tree2 = styled.View`
 
 
 
-export const Gram = styled.View`
+export const Ground = styled.View`
  position: absolute;
  background-color: #79ff79;
  top:117%;
