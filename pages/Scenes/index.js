@@ -67,7 +67,7 @@ function Scenes2() {
     return (
         <Container>
 
-            {/* Abaxio segue um exemplo usando o objeto de items */}
+            
             
             
             <Cloud>
