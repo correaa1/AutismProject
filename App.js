@@ -15,26 +15,26 @@ import Scenes from "./pages/Scenes/index";
       const [index, setIndex] = React.useState(0);
       const [routes] = React.useState([
         { key: 'Home', title: 'Home',  },
-       // { key: 'Categorias', title: 'Categorias', icon: 'history', },
+        { key: 'Home', title: 'Categorias', icon: 'history', },
       ]);
     
       const renderScene = BottomNavigation.SceneMap({
         Home: Home, 
-        Categorias:Categorias,
+        Categorias:Home,
       });
 
         return (
          
-          <NavigationContainer>
+         
        <BottomNavigation
             barStyle={{ backgroundColor: '#3057b1' }}
               navigationState={{ index, routes }}
               onIndexChange={setIndex}
               renderScene={renderScene}
-              onPress={() => renderScene(0)}
+             
               
             />
-            </NavigationContainer>
+           
       
          
             );

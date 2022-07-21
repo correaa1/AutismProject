@@ -5,12 +5,12 @@ import { Container,Card,Texto, } from "./styles";
 import Animals from "../animals/index"
 import Home from "../home/index"
 import Scenes from "../Scenes/index"
-  
+import Alfabeto from "../Alfabeto/index"
 export default function App(){
 
  
 const [page, setPage] = useState(0);
-  const currentPage = [<></>, <Animals />, <Scenes /> ];
+  const currentPage = [<></>, <Alfabeto />, <Scenes /> ];
   return(<>
     {currentPage[page]}
  
@@ -27,5 +27,4 @@ const [page, setPage] = useState(0);
     </Container></>
 )
 
-
-  }
+}

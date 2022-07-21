@@ -26,45 +26,42 @@ function Scenes2() {
 
     const items = {
         "Cloud2" : {
-            image: require("./src/cloud2.png"), //aqui voce coloca o path da imagem
-            sound: require(`./sound/Wolf.mp3`), //aqui o path do som
+            image: require("./src/cloud2.png"), 
+            sound: require(`./sound/Wolf.mp3`), 
         },
         "nuvem" : {
             image: require("./src/Cloud.png"),
             sound: require(`./sound/Wolf.mp3`),
         },
             "Sun" : {
-                image: require("./src/sun.png"), //aqui voce coloca o path da imagem
-                sound: require(`./sound/Wolf.mp3`), //aqui o path do som
+                image: require("./src/sun.png"), 
+                sound: require(`./sound/Wolf.mp3`), 
             },
             "Bird" : {
-                image: require("./src/Bird.png"), //aqui voce coloca o path da imagem
-                sound: require(`./sound/Wolf.mp3`), //aqui o path do som
+                image: require("./src/Bird.png"), 
             },
            
             "Home" : {
-                image: require("./src/Home.png"), //aqui voce coloca o path da imagem
-                sound: require(`./sound/Wolf.mp3`), //aqui o path do som
+                image: require("./src/Home.png"), 
             },
 
             "Plane" : {
-                image: require("./src/Plane.png"), //aqui voce coloca o path da imagem
-                sound: require(`./sound/Wolf.mp3`), //aqui o path do som
+                image: require("./src/Plane.png"), 
             },
 
             "Ground" : {
-                image: require("./src/ground.png"), //aqui voce coloca o path da imagem
-                sound: require(`./sound/Wolf.mp3`), //aqui o path do som
+                image: require("./src/ground.png"), 
+                sound: require(`./sound/Wolf.mp3`), 
             },
 
             "Tree" : {
-                image: require("./src/Tree1.png"), //aqui voce coloca o path da imagem
-                sound: require(`./sound/Wolf.mp3`), //aqui o path do som
+                image: require("./src/Tree1.png"), 
+                sound: require(`./sound/Wolf.mp3`),
             },
 
             
             
-    }; // para usar você so precisa colocar... items.exemplo.image ai ele pega a imagem...
+    }; 
 
 
     return (
