@@ -1,30 +1,52 @@
-import { View, Text, Image, TouchableOpacity, BackHandler } from "react-native";
+import { View, Text, Image, TouchableOpacity, BackHandler,StyleSheet } from "react-native";
 import  React, {useState} from 'react';
 import { Button } from 'react-native-paper';
-import { Container,Card,Texto, } from "./styles";
+import { Container,Card,Texto,Imagem,  } from "./styles";
 import Animals from "../animals/index"
 import Home from "../home/index"
 import Scenes from "../Scenes/index"
 import Alfabeto from "../Alfabeto/index"
-export default function App(){
+import { StatusBar } from "react-native";
+import Icon from 'react-native-vector-icons/FontAwesome';
 
+
+
+export default function App(){
+  
  
 const [page, setPage] = useState(0);
-  const currentPage = [<></>, <Alfabeto />, <Scenes /> ];
+  const currentPage = [<></>,<Animals />,<Alfabeto /> , <Scenes /> ];
   return(<>
+  <StatusBar barStyle="light-content" backgroundColor="transparent" translucent/>
     {currentPage[page]}
  
     <Container> 
- 
-               <Card 
- icon={require('./src/autism.png' ) } mode="contained"onPress={() =>  setPage(1) }
- ><Texto>Descubra o animal</Texto> 
+  
+    <Imagem>
+   <Image  style = {{ width: 200, height: 200 }} source={require("./src/Autism.png")}/>
+   </Imagem>
+
+   <Card mode="contained"onPress={() =>  setPage(1) }>
+   <Image source={require("./src/HorseIcon.png")}  style = {{ width: 40, height: 40}} color="#999" />
+    
+  
+ <Texto>Animais</Texto>  
+  
     </Card>   
-    <Card 
- icon={require('./src/autism.png' ) } mode="contained"onPress={() =>  setPage(2) }
- ><Texto>Vamos pintar</Texto> 
+
+    <Card  mode="contained"onPress={() =>  setPage(2) }>
+      <Image source={require("./src/Alphabet.png")}  style = {{ width: 40, height: 40}} color="#999" />
+ <Texto>Alfabeto</Texto> 
+    </Card>   
+
+    <Card  mode="contained"onPress={() =>  setPage(3) } >
+    <Image source={require("./src/IconeButton.png")}  style = {{ width: 40, height: 40}} color="#999" />
+ <Texto>Vamos Colorir</Texto> 
     </Card>   
     </Container></>
-)
+
+    
+    )
 
 }
+
