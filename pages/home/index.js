@@ -1,4 +1,4 @@
-import { View, Text, Image, TouchableOpacity, BackHandler,StyleSheet } from "react-native";
+import { View, Text, Image, TouchableOpacity, StyleSheet,BackHandler } from "react-native";
 import  React, {useState} from 'react';
 import { Button } from 'react-native-paper';
 import { Container,Card,Texto,Imagem,  } from "./styles";
@@ -17,6 +17,8 @@ export default function App(){
 const [page, setPage] = useState(0);
   const currentPage = [<></>,<Animals />,<Alfabeto /> , <Scenes /> ];
   return(<>
+
+
   <StatusBar barStyle="light-content" backgroundColor="transparent" translucent/>
     {currentPage[page]}
  
