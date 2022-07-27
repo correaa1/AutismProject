@@ -1,6 +1,5 @@
 import { View, Text, Image, TouchableOpacity, StyleSheet,BackHandler } from "react-native";
 import  React, {useState} from 'react';
-import { Button } from 'react-native-paper';
 import { Container,Card,Texto,Imagem,  } from "./styles";
 import Animals from "../animals/index"
 import Home from "../home/index"
