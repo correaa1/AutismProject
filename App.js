@@ -14,10 +14,10 @@ function DetailsScreen() {
 
 function HomeScreen({ navigation }) {
   return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Home screen</Text>
+    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor:'#0067ce' }}>
+      
       <Button
-        title="Go to Details"
+        title="Começar"
         onPress={() => navigation.navigate('Details')}
       />
     </View>
@@ -41,23 +41,23 @@ const HomeStack = createNativeStackNavigator();
 function HomeStackScreen() {
   return (
     <HomeStack.Navigator shifting={true}
-      sceneAnimationEnabled={false}
-      screenOptions={{
-        
-          tabBarActiveTintColor: "white",
-          tabBarInactiveTintColor: "gray",
-          headerStyle: {
-              backgroundColor: '#0067ce',
-          },
-          headerTitleStyle: {
-              color: "white",
-          },tabBarStyle: {
-            paddingBottom: 6,
-            backgroundColor: "#0067ce",
-            borderTopColor: "#0067ce",
+    sceneAnimationEnabled={false}
+    screenOptions={{
+    
+        tabBarActiveTintColor: "white",
+        tabBarInactiveTintColor: "gray",
+        headerStyle: {
+            backgroundColor: '#0067ce',
         },
-    }}>
-      <HomeStack.Screen name="Home" component={Home} />
+        headerTitleStyle: {
+            color: "white",
+        },tabBarStyle: {
+          paddingBottom: 6,
+          backgroundColor: "#0067ce",
+          borderTopColor: "#0067ce",
+      },
+  }}  >
+      <HomeStack.Screen name="Home" component={HomeScreen} />
       <HomeStack.Screen name="Details" component={Home} />
     </HomeStack.Navigator>
   );
