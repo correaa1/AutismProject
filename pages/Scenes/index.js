@@ -27,36 +27,39 @@ function Scenes2() {
     const items = {
         "Cloud2" : {
             image: require("./src/cloud2.png"), 
-            sound: require(`./sound/Wolf.mp3`), 
+            sound: require(`./sound/Cloud.mp3`), 
         },
-        "nuvem" : {
+        "Cloud" : {
             image: require("./src/Cloud.png"),
-            sound: require(`./sound/Wolf.mp3`),
+            sound: require(`./sound/Cloud.mp3`),
         },
             "Sun" : {
                 image: require("./src/sun.png"), 
-                sound: require(`./sound/Wolf.mp3`), 
+                sound: require(`./sound/Sun.mp3`), 
             },
             "Bird" : {
                 image: require("./src/Bird.png"), 
+                sound: require(`./sound/Bird.mp3`), 
             },
            
             "Home" : {
                 image: require("./src/Home.png"), 
+                sound: require(`./sound/Home.mp3`),
             },
 
             "Plane" : {
                 image: require("./src/Plane.png"), 
+                sound: require("./sound/Plane.mp3"),
             },
 
             "Ground" : {
                 image: require("./src/ground.png"), 
-                sound: require(`./sound/Wolf.mp3`), 
+               
             },
 
             "Tree" : {
                 image: require("./src/Tree1.png"), 
-                sound: require(`./sound/Wolf.mp3`),
+                sound: require(`./sound/Tree.mp3`),
             },
 
             
@@ -71,35 +74,35 @@ function Scenes2() {
             
             
             <Cloud>
-            <ButtonColor imagePath={items.nuvem.image} playSoundFunction={() => playSound(items.nuvem.sound)} /> 
+            <ButtonColor imagePath={items.Cloud.image} playSoundFunction={() => playSound(items.Cloud.sound)} /> 
             </Cloud>
 
             <Cloud2>
-            <ButtonColor imagePath={items.Cloud2.image} playSoundFunction={() => playSound(items.nuvem.sound)} /> 
+            <ButtonColor imagePath={items.Cloud2.image} playSoundFunction={() => playSound(items.Cloud2.sound)} /> 
             </Cloud2>
 
             <Sun>
-            <ButtonColor imagePath={items.Sun.image} playSoundFunction={() => playSound(items.nuvem.sound)} /> 
+            <ButtonColor imagePath={items.Sun.image} playSoundFunction={() => playSound(items.Sun.sound)} /> 
            </Sun> 
             
             <Bird>
-            <ButtonColor imagePath={items.Bird.image} playSoundFunction={() => playSound(items.nuvem.sound)} /> 
+            <ButtonColor imagePath={items.Bird.image} playSoundFunction={() => playSound(items.Bird.sound)} /> 
             </Bird>
 
             <Home>
-            <ButtonColor imagePath={items.Home.image} playSoundFunction={() => playSound(items.nuvem.sound)} /> 
+            <ButtonColor imagePath={items.Home.image} playSoundFunction={() => playSound(items.Home.sound)} /> 
             </Home>
 
             <Plane>
-            <ButtonColor imagePath={items.Plane.image} playSoundFunction={() => playSound(items.nuvem.sound)} /> 
+            <ButtonColor imagePath={items.Plane.image} playSoundFunction={() => playSound(items.Plane.sound)} /> 
             </Plane>
 
             <Ground>
-            <ButtonColor imagePath={items.Ground.image} playSoundFunction={() => playSound(items.nuvem.sound)} /> 
+            <ButtonColor imagePath={items.Ground.image}  /> 
             </Ground>
             
             <Tree>
-            <ButtonColor imagePath={items.Tree.image} playSoundFunction={() => playSound(items.nuvem.sound)} /> 
+            <ButtonColor imagePath={items.Tree.image} playSoundFunction={() => playSound(items.Tree.sound)} /> 
             </Tree>
           
            

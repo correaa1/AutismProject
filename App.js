@@ -14,27 +14,16 @@ function DetailsScreen() {
 
 function HomeScreen({ navigation }) {
   return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor:'#0067ce' }}>
+    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor:'#2291ff' }}>
       
       <Button
         title="Começar"
-        onPress={() => navigation.navigate('Details')}
+        onPress={() => navigation.navigate('Voltar')}
       />
     </View>
   );
 }
 
-function SettingsScreen({ navigation }) {
-  return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Settings screen</Text>
-      <Button
-        title="Go to Details"
-        onPress={() => navigation.navigate('Details')}
-      />
-    </View>
-  );
-}
 
 const HomeStack = createNativeStackNavigator();
 
@@ -47,32 +36,24 @@ function HomeStackScreen() {
         tabBarActiveTintColor: "white",
         tabBarInactiveTintColor: "gray",
         headerStyle: {
-            backgroundColor: '#0067ce',
+            backgroundColor: '#0984ff',
         },
         headerTitleStyle: {
             color: "white",
         },tabBarStyle: {
           paddingBottom: 6,
-          backgroundColor: "#0067ce",
-          borderTopColor: "#0067ce",
+          backgroundColor: "#0984ff",
+          borderTopColor: "#0984ff",
       },
   }}  >
       <HomeStack.Screen name="Home" component={HomeScreen} />
-      <HomeStack.Screen name="Details" component={Home} />
+      <HomeStack.Screen name="Voltar" component={Home} />
     </HomeStack.Navigator>
   );
 }
 
 const SettingsStack = createNativeStackNavigator();
 
-function SettingsStackScreen() {
-  return (
-    <SettingsStack.Navigator  >
-      <SettingsStack.Screen name="Settings" component={SettingsScreen} />
-      <SettingsStack.Screen name="Details" component={DetailsScreen} />
-    </SettingsStack.Navigator>
-  );
-}
 
 const Tab = createBottomTabNavigator();
 
@@ -87,20 +68,20 @@ export default function App() {
           tabBarActiveTintColor: "white",
           tabBarInactiveTintColor: "gray",
           headerStyle: {
-              backgroundColor: '#0067ce',
+              backgroundColor: '#0984ff',
           },
           headerTitleStyle: {
               color: "white",
           },tabBarStyle: {
             paddingBottom: 6,
-            backgroundColor: "#0067ce",
-            borderTopColor: "#0067ce",
+            backgroundColor: "#0984ff",
+            borderTopColor: "#0984ff",
         },
     }}
       >
         
         <Tab.Screen name="Home" component={HomeStackScreen} />
-        <Tab.Screen name="Settings" component={SettingsStackScreen} />
+        
       </Tab.Navigator>
     </NavigationContainer>
   );
