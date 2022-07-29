@@ -5,6 +5,7 @@ import Animals from "../animals/index"
 import Home from "../home/index"
 import Scenes from "../Scenes/index"
 import Alfabeto from "../Alfabeto/index"
+import Numero from "../Numero/index"
 import { StatusBar } from "react-native";
 import Icon from 'react-native-vector-icons/FontAwesome';
 
@@ -14,7 +15,7 @@ export default function App(){
   
  
 const [page, setPage] = useState(0);
-  const currentPage = [<></>,<Animals />,<Alfabeto /> , <Scenes /> ];
+  const currentPage = [<></>,<Animals />,<Alfabeto /> , <Scenes />,<Numero /> ];
   return(<>
 
 
@@ -24,7 +25,7 @@ const [page, setPage] = useState(0);
     <Container> 
   
     <Imagem>
-   <Image  style = {{ width: 200, height: 200 }} source={require("./src/Autism.png")}/>
+   <Image  style = {{ width: 200, height: 200 }} source={require("../home/src/Autism.png")}/>
    </Imagem>
 
    <Card mode="contained"onPress={() =>  setPage(1) }>
@@ -44,6 +45,12 @@ const [page, setPage] = useState(0);
     <Image source={require("./src/IconeButton.png")}  style = {{ width: 40, height: 40}} color="#999" />
  <Texto>Vamos Colorir</Texto> 
     </Card>   
+
+    <Card  mode="contained"onPress={() =>  setPage(4) } >
+    <Image source={require("./src/numbers.png")}  style = {{ width: 40, height: 40}} color="#999" />
+ <Texto>Números</Texto> 
+    </Card>   
+
     </Container></>
 
     

@@ -27,8 +27,8 @@ export const Imagem = styled.View`
     align-items: center;
     width: 30%;
     height:50%;
-    padding:20%;
-    margin-top:10% ;
+    padding:10%;
+    
     
    
 `;
