@@ -7,13 +7,15 @@ export const Container = styled.View`
     background-color: #409fff;
 `;
 export const Card = styled.TouchableOpacity`
-   width: 50%;
-    height:12% ;
+    
     justify-content: center;
     align-items: center;
     background-color: #0f87ff;
     border:1px;
-    margin-top:5%;
+    padding:2% 10%;
+    margin-bottom:8%
+    
+    
     
     
     
@@ -25,9 +27,7 @@ export const Texto = styled.Text`
 export const Imagem = styled.View`
     flex:1;
     align-items: center;
-    width: 30%;
-    height:50%;
-    padding:10%;
+
     
     
    
