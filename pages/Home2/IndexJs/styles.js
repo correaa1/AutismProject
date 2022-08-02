@@ -7,21 +7,21 @@ export const Container = styled.View`
     background-color: #409fff;
 `;
 export const Card = styled.TouchableOpacity`
-    justify-content: center;
-    align-items: center;
-    background-color: #0f87ff;
+
+   align-items: center;
     border:1px;
-    padding:5% 10%;
+    padding:5% ;
     margin-bottom:5%
 
 `;
 export const Texto = styled.Text`
     color: #ffffff;
+    
 `;
 
 export const Imagem = styled.View`
-    align-items: center;
-    padding:5%;
+    align-items: center; 
+     
    
 
 `;

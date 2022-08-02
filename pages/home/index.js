@@ -2,7 +2,6 @@ import { View, Text, Image, TouchableOpacity, StyleSheet,BackHandler } from "rea
 import  React, {useState} from 'react';
 import { Container,Card,Texto,Imagem,  } from "./styles";
 import Animals from "../animals/index"
-import Home from "../home/index"
 import Scenes from "../Scenes/index"
 import Alfabeto from "../Alfabeto/index"
 import Numero from "../Numero/index"

@@ -54,7 +54,7 @@ function Scenes2() {
 
             "Ground" : {
                 image: require("./src/ground.png"), 
-               
+                sound: require(`./sound/Ground.mp3`),
             },
 
             "Tree" : {
@@ -98,7 +98,7 @@ function Scenes2() {
             </Plane>
 
             <Ground>
-            <ButtonColor imagePath={items.Ground.image}  /> 
+            <ButtonColor imagePath={items.Ground.image} playSoundFunction={() => playSound(items.Ground.sound)} /> 
             </Ground>
             
             <Tree>

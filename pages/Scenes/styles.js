@@ -59,11 +59,12 @@ export const Tree2 = styled.View`
 
 export const Ground = styled.View`
  position: absolute;
- background-color: #79ff79;
+ background-color: #d2ffd2;
  top:117%;
  width: 100%;
 height:20% ;
-border:1px
+border:1px;
+
 `;
 export const Bird = styled.View`
  position: absolute;
