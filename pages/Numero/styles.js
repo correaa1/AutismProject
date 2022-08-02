@@ -2,7 +2,7 @@ import styled from "styled-components/native";
 
 export const Container = styled.ScrollView`
     display: flex;
-    margin-top: 20px;
+  
     background-color:#66b3ff;
 `;
 
@@ -18,6 +18,8 @@ export const ViewAnimalsAction = styled.View`
     flex-wrap: wrap;
     justify-content: space-around;
     width: 100%;
+    margin-top:2%;
+    padding:5%
 `;
 
 export const ButtonAction = styled.TouchableOpacity`

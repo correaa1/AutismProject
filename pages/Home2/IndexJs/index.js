@@ -4,7 +4,7 @@ import { Container,Card,Texto,Imagem,  } from "./styles";
 import { useNavigation } from '@react-navigation/native';
 import { StatusBar } from "react-native";
 import * as Animatable from 'react-native-animatable';
-import Alfabeto from './../../Alfabeto/index';
+
 
 export default function Home(){
   const navigation = useNavigation();
@@ -21,7 +21,7 @@ export default function Home(){
    }
 
    function navegaColorir(){
-     navigation.navigate('Scenes')
+     navigation.navigate('Colorir')
    }
 
   return(
@@ -29,11 +29,9 @@ export default function Home(){
            <StatusBar barStyle="light-content" backgroundColor="transparent" translucent/>
     
     <View >
-     <Imagem >
-     <Animatable.Image animation="flipInY"  style = {{ width: 200, height: 200 }} source={require("../src/Autism.png")}/>
-   </Imagem>
      
-
+     <Animatable.Image animation="flipInY"  style = {{ width: 200, height: 200, top:"-3%"}} source={require("../src/Autism.png")}/>
+  
       <Animatable.View animation="fadeInUp" delay={600}>
       <Card   onPress={ navegaAnimals } >
       <Image source={require("../src/HorseIcon.png")}style = {{ width: 40, height: 40}} color="#999"  />

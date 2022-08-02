@@ -10,8 +10,9 @@ export const Card = styled.TouchableOpacity`
 
    align-items: center;
     border:1px;
-    padding:5% ;
-    margin-bottom:5%
+    padding:5% 3% ;
+    margin-top:5% ;
+   
 
 `;
 export const Texto = styled.Text`
@@ -20,8 +21,8 @@ export const Texto = styled.Text`
 `;
 
 export const Imagem = styled.View`
-    align-items: center; 
-     
+   
+
    
 
 `;
