@@ -20,7 +20,9 @@ export default function Routes(){
                     tabBarStyle:{
                     position: 'absolute',
                     backgroundColor:'#0f87ff',
-                    borderRadius:8,     
+                    borderRadius:8,
+                    display:'none'  
+                       
                     
                }
 
@@ -35,9 +37,9 @@ export default function Routes(){
                     }
           
           }} />
-          
-
           </Tab.Navigator>
+
+          
      )
 
 }
