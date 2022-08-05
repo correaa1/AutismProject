@@ -37,11 +37,7 @@ export const ButtonAction = styled.TouchableOpacity`
     overflow: hidden;
 `;
 
-export const ImageAnimals = styled.Image`
-    width: 170px;
-    height: 180px;
-    z-index: 1;
-`;
+
 export const ImageBackgroundAnimals = styled.Image`
     width: 170px;
     height: 180px;

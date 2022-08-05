@@ -3,6 +3,7 @@ import { Text, Image, Button, View, TouchableOpacity } from "react-native";
 import { Audio } from "expo-av";
 import { Container, ImageAnimals, ImageBackgroundAnimals, ButtonAction, ViewAnimalsAction, TextAnimalName, ImageBackground } from "./styles";
 import { StatusBar } from "react-native";
+import * as Animatable from 'react-native-animatable';
 
 function Numero() {
     const numero = [
@@ -61,7 +62,7 @@ function Numero() {
                                     playSound(elem[2]);
                                 }}
                             >
-                                <ImageAnimals  source={elem[1]} />
+                                <Animatable.Image animation='fadeInDownBig' style={{width:'90%',height:'70%'}}  source={elem[1]} />
                                 <ImageBackgroundAnimals source={elem[1]} />
                                 <TextAnimalName>{elem[0]}</TextAnimalName>
                             </ButtonAction>

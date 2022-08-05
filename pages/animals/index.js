@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { Audio } from "expo-av";
 import { StatusBar } from "react-native";
 import backgroundbganimals from "./assets/background.png";
-import { Container, ImageAnimals, ImageBackgroundAnimals, ButtonAction, ViewAnimalsAction, TextAnimalName, ImageBackground } from "./styles";
+import { Container,  ImageBackgroundAnimals, ButtonAction, ViewAnimalsAction, TextAnimalName, ImageBackground } from "./styles";
+import * as Animatable from 'react-native-animatable';
 
 export default function App() {
     const [sound, setSound] = React.useState();
@@ -57,7 +58,7 @@ export default function App() {
                                     playSound(elem[2]);
                                 }}
                             >
-                                <ImageAnimals  source={elem[1]} />
+                                <Animatable.Image animation='zoomIn' style={{width:'80%',height:'70%'}}  source={elem[1]} />
                                 <ImageBackgroundAnimals source={elem[1]} />
                                 <TextAnimalName>{elem[0]}</TextAnimalName>
                             </ButtonAction>

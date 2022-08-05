@@ -22,25 +22,20 @@ export const ViewAnimalsAction = styled.View`
 `;
 
 export const ButtonAction = styled.TouchableOpacity`
-    width: 200px;
-    height: 250px;
+    width: 250px;
+    height: 280px;
     border: 1px solid lightgray;
     box-shadow: 5px 5px 2px lightgray;
     border-radius: 10px;
-    padding: 10px;
-    margin-bottom: 20px;
+    padding: 7%;
+    margin-bottom: 5%;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
 `;
 
-export const ImageAnimals = styled.Image`
-    width: 170px;
-    height: 180px;
-    z-index: 1;
-    
-`;
+
 export const ImageBackgroundAnimals = styled.Image`
     width: 170px;
     height: 180px;

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { Text, Image, Button, View, TouchableOpacity } from "react-native";
 import { Audio } from "expo-av";
 import { Container, ImageAnimals, ImageBackgroundAnimals, ButtonAction, ViewAnimalsAction, TextAnimalName, ImageBackground } from "./styles";
 import { StatusBar } from "react-native";
+import * as Animatable from 'react-native-animatable';
 
 function Alfabeto() {
     const alfabeto = [
@@ -66,7 +66,7 @@ function Alfabeto() {
                                     playSound(elem[2]);
                                 }}
                             >
-                                <ImageAnimals  source={elem[1]} />
+                                <Animatable.Image animation='wobble' style={{width:'90%',height:'80%'}}  source={elem[1]} />
                                 <ImageBackgroundAnimals source={elem[1]} />
                                 <TextAnimalName>{elem[0]}</TextAnimalName>
                             </ButtonAction>
