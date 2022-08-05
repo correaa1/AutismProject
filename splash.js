@@ -17,7 +17,7 @@ export default function ChangingColorOfLayers() {
          autoPlay
          loop={false}
          onAnimationFinish={() => navigation.navigate('Home')}
-         resizeMode="contain"
+         resizeMode="contain"         
          
          
        />
